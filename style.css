@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.wrapper {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: white;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  max-width: 360px;
+  width: 100%;
+}
+.code-qr {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.code-qr img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.main-heading,
+.sub-heading {
+  margin: 15px 8px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 15px;
+  font-weight: 700;
+}
+.sub-heading {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(212, 45%, 89%);
+}
+
+.code-qr:hover::after {
+  content: "tarun sharma originl";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 2rem;
+  font-weight: bold;
+}
